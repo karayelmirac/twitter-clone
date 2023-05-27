@@ -1,3 +1,17 @@
+
+# Twitter Clone
+
+Twitter Clone with Tailwindcss & ReactJS & Firebase & FireStore & NextJS
+
+
+
+
+## Screen Shot
+
+![Screen Shot](https://i.ibb.co/SsjvqrY/resim-2023-05-27-201508870.png)
+
+  
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
