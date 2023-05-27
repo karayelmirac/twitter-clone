@@ -5,8 +5,13 @@ import React  from "react";
 import db from "../firebase";
 import {doc, collection, getDocs ,getDocsFromServer} from "firebase/firestore";
 import TweetList from "@/components/TweetList";
-const Content =  () => {
+const Content =  async () => {
 
+  const docArr = []
+  const querySnapshot = await getDocs(collection(db, "feed"));
+  querySnapshot.forEach((doc) => {
+    docArr.push(doc.data())
+  });
 
 
 
@@ -26,7 +31,7 @@ const Content =  () => {
       </div>
       <Divider />
 
-      <TweetList/>
+      <TweetList docArr={docArr}/>
     </main>
   );
 };

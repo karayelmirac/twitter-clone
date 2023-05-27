@@ -1,12 +1,14 @@
-import React from 'react'
-import TweetItem from './TweetItem'
+import React from "react";
+import TweetItem from "./TweetItem";
 
-const TweetList = () => {
+const TweetList = ({ docArr }) => {
   return (
     <div>
-        <h1>tweet list</h1>
+      {docArr.map((doc, index) => {
+        return <TweetItem {...doc} key={index} />;
+      })}
     </div>
-  )
-}
+  );
+};
 
-export default TweetList
+export default TweetList;

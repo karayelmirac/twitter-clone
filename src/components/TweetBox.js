@@ -18,7 +18,7 @@ const TweetBox = () => {
         // Collection created
       const docRef = await addDoc(collection(db, "feed"), {
         displayName: " Miraç Karayel",
-        userName: "MiracKarayel",
+        userName: "@MiracKarayel",
         content,
         avatar:
           "https://pbs.twimg.com/profile_images/1465223256013774848/a6c2Boi4_400x400.jpg",
